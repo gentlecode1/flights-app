@@ -1,0 +1,77 @@
+{
+	"info": {
+		"_postman_id": "27e1baff-4e80-4ba5-9465-ce9557fea435",
+		"name": "prueba",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28053369"
+	},
+	"item": [
+		{
+			"name": "create-comment",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n  \"comment\": \"This is another test comment\",\n  \"userId\": 124,\n  \"flightId\": 458,\n  \"tags\": [\"important\", \"urgent\"]\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6868/api/comments",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"api",
+						"comments"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "comments-by-flight-id",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:6868/api/comments?flightId=456",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "6868",
+					"path": [
+						"api",
+						"comments"
+					],
+					"query": [
+						{
+							"key": "flightId",
+							"value": "456"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,15 @@
+{
+  "name": "max-concurrency",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx jest"
+  },
+  "author": "Javier Jiménez de Frutos",
+  "license": "ISC",
+  "dependencies": {
+    "jest": "^29.5.0",
+    "node-fetch": "^3.3.1"
+  }
+}

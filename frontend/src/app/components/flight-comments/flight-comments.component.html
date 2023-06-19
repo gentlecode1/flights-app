@@ -1,0 +1,31 @@
+<div class="d-flex justify-content-center">
+    <h2>{{selectedFlight.name}}</h2>
+</div>
+<mat-table class="table" [dataSource]="comments">
+    <ng-container matColumnDef="id">
+        <mat-header-cell *matHeaderCellDef> Id </mat-header-cell>
+        <mat-cell *matCellDef="let comment"> {{ comment.id }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="comment">
+        <mat-header-cell *matHeaderCellDef> Comment </mat-header-cell>
+        <mat-cell *matCellDef="let comment"> {{ comment.comment }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="userId">
+        <mat-header-cell *matHeaderCellDef> User Id </mat-header-cell>
+        <mat-cell *matCellDef="let comment"> {{ comment.userId }} </mat-cell>
+    </ng-container>
+
+    <ng-container matColumnDef="tags">
+        <mat-header-cell *matHeaderCellDef> Tags </mat-header-cell>
+        <mat-cell *matCellDef="let comment"> {{ comment.tags }} </mat-cell>
+    </ng-container>
+
+    <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+    <mat-row *matRowDef="let comment; columns: displayedColumns;"></mat-row>
+</mat-table>
+
+<div class="d-flex justify-content-center mt-1 mb-3">
+    <button class="btn btn-secondary" [disabled]="!selectedFlight" (click)="addComment.emit()">Add new comment</button>
+</div>

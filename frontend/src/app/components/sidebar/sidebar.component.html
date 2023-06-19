@@ -1,0 +1,6 @@
+<mat-nav-list class="sidenav">
+    <a mat-list-item [activated]="selectedFlight && flight.id == selectedFlight.id" *ngFor="let flight of flights"
+        (click)="onClick.emit(flight)">
+        {{ flight.name }}
+    </a>
+</mat-nav-list>

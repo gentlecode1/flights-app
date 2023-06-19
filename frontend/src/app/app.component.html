@@ -1,0 +1,8 @@
+<div class="d-flex container">
+  <app-sidebar [flights]="flights" [selectedFlight]="selectedFlight"
+    (onClick)="selectedFlight = $event; comments$ = getComments()"></app-sidebar>
+  <div *ngIf="selectedFlight" class="d-flex flex-column content mt-3">
+    <app-flight-comments [selectedFlight]="selectedFlight" [comments]="(comments$ | async)!"
+      (addComment)="addComment()"></app-flight-comments>
+  </div>
+</div>
