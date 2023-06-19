@@ -93,10 +93,8 @@ Given an array of URLs and a MAX_CONCURRENCY integer, implement a function that 
 
 SOLUTION
 
-To deploy the end-to-end solution (backend and frontend):
-
-Backend: The solution is containerized using Docker. It includes a docker-compose file that sets up the MongoDB database and the Node.js project with Express for API implementation. To start this part, navigate to the directory where the docker-compose file is located and execute the command "docker-compose up -d."
+Backend: The solution is containerized using Docker. It includes a docker-compose file that sets up the MongoDB database and the Node.js project with Express for API implementation. To start this part, navigate to the directory where the docker-compose file is located and execute the command "docker-compose up -d." It includes a postman collection in the root directory.
 
 Frontend: The Angular solution is deployed by navigating to the Angular project directory and running the command "ng serve" (ensure that port 4200 is available).
 
-To run the JavaScript test for the backend, navigate to the corresponding directory and execute the command "npm run test."
+Javascript: To run the JavaScript test for the backend, navigate to the corresponding directory and execute the command "npm run test."
