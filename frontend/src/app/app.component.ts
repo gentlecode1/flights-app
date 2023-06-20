@@ -20,18 +20,18 @@ export class AppComponent {
     { id: 459, name: 'Berlin - Barcelona' },
     { id: 460, name: 'Rome - Vienna' },
     { id: 461, name: 'Madrid - Barcelona' },
-    { id: 462, name: 'Milano - Paris' },
+    { id: 462, name: 'Milan - Paris' },
     { id: 463, name: 'New York - Chicago' },
     { id: 464, name: 'Los Angeles - Phoenix' },
-    { id: 465, name: 'Pekin - Sanghai' },
+    { id: 465, name: 'Beijing - Shanghai' },
     { id: 466, name: 'Bangkok - Sidney' },
-    { id: 467, name: 'Quito - Bogotá' },
+    { id: 467, name: 'Quito - Bogota' },
     { id: 468, name: 'Sao Paulo - Lisbon' },
-    { id: 469, name: 'Panamá City - New Orleans' },
+    { id: 469, name: 'Panama City - New Orleans' },
     { id: 470, name: 'Helsinki - Frankfurt' },
     { id: 471, name: 'Budapest - Beirut' },
-    { id: 472, name: 'Teheran - Istambul' },
-    { id: 473, name: 'Niger - Marrakech' }
+    { id: 472, name: 'Teheran - Istanbul' },
+    { id: 473, name: 'Cape Town - Marrakesh' }
   ]
   comments$!: Observable<FlightComment[]>
   displayedColumns: string[] = ['id', 'comment', 'userId', 'tags'];
