@@ -14,24 +14,24 @@ export class AppComponent {
   title = 'prueba';
   selectedFlight!: { id: number, name: string }
   flights = [
-    { id: 456, name: 'Vuelo 155363343' },
-    { id: 457, name: 'Vuelo 2' },
-    { id: 458, name: 'Vuelo 2' },
-    { id: 459, name: 'Vuelo 2' },
-    { id: 460, name: 'Vuelo 2' },
-    { id: 461, name: 'Vuelo 2' },
-    { id: 462, name: 'Vuelo 2' },
-    { id: 463, name: 'Vuelo 2' },
-    { id: 464, name: 'Vuelo 2' },
-    { id: 465, name: 'Vuelo 2' },
-    { id: 466, name: 'Vuelo 2' },
-    { id: 467, name: 'Vuelo 2' },
-    { id: 468, name: 'Vuelo 2' },
-    { id: 469, name: 'Vuelo 2' },
-    { id: 470, name: 'Vuelo 2' },
-    { id: 471, name: 'Vuelo 2' },
-    { id: 472, name: 'Vuelo 2' },
-    { id: 473, name: 'Vuelo 2' }
+    { id: 456, name: 'Barcelona - Paris' },
+    { id: 457, name: 'Madrid - Lima' },
+    { id: 458, name: 'London - Bilbao' },
+    { id: 459, name: 'Berlin - Barcelona' },
+    { id: 460, name: 'Rome - Vienna' },
+    { id: 461, name: 'Madrid - Barcelona' },
+    { id: 462, name: 'Milano - Paris' },
+    { id: 463, name: 'New York - Chicago' },
+    { id: 464, name: 'Los Angeles - Phoenix' },
+    { id: 465, name: 'Pekin - Sanghai' },
+    { id: 466, name: 'Bangkok - Sidney' },
+    { id: 467, name: 'Quito - Bogotá' },
+    { id: 468, name: 'Sao Paulo - Lisbon' },
+    { id: 469, name: 'Panamá City - New Orleans' },
+    { id: 470, name: 'Helsinki - Frankfurt' },
+    { id: 471, name: 'Budapest - Beirut' },
+    { id: 472, name: 'Teheran - Istambul' },
+    { id: 473, name: 'Niger - Marrakech' }
   ]
   comments$!: Observable<FlightComment[]>
   displayedColumns: string[] = ['id', 'comment', 'userId', 'tags'];
